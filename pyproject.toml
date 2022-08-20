@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "auto_version"
+version = "0.1.0"
+description = ""
+authors = ["Geoffrey Lentner <glentner@purdue.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cmdkit = "^2.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+hypothesis = "^6.54.4"
+ipython = "^8.4.0"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
