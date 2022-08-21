@@ -31,6 +31,15 @@ hypothesis = "^6.54.4"
 ipython = "^8.4.0"
 pytest-cov = "^3.0.0"
 
+[tool.pytest.ini_options]
+addopts = ["--strict-markers", ]
+markers = [
+    "unit: Unit tests are short, interface driven tests on discrete components.",
+    "integration: Integration tests are often longer and deal with the interaction between systems.",
+    "parameterize: Place holder for parameterized tests (not a real type).",
+]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
