@@ -1,3 +1,10 @@
+# SPDX-FileCopyrightText: 2022 Geoffrey Lentner
+# SPDX-License-Identifier: Apache-2.0
+
+"""Unit tests for auto-version."""
+
+
+# internal libs
 from auto_version import __version__
 
 
