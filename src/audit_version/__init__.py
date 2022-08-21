@@ -16,18 +16,20 @@ from cmdkit.app import Application
 from cmdkit.cli import Interface
 
 # public interface
-__all__ = ['AuditVersionApp', 'main', '__version__', '__license__']
+__all__ = ['AuditVersionApp', 'main',
+           '__appname__', '__version__', '__authors__', '__contact__', '__license__',
+           '__copyright__', '__website__', '__keywords__', '__description__', ]
 
 # project metadata
-__appname__     = 'audit-version'
-__version__     = '0.1.0'
-__authors__     = 'Geoffrey Lentner'
-__contact__     = 'glentner@purdue.edu'
-__license__     = 'Apache Software License'
-__copyright__   = '2022. All Rights Reserved.'
-__website__     = 'https://github.com/glentner/audit-version-py'
-__keywords__    = 'version-control semantic-versioning'
-__description__ = 'Audit public interface for Python projects and suggest next semantic version'
+__appname__: str = 'audit-version'
+__version__: str = '0.1.0'
+__authors__: str = 'Geoffrey Lentner'
+__contact__: str = 'glentner@purdue.edu'
+__license__: str = 'Apache Software License'
+__copyright__: str = '2022. All Rights Reserved.'
+__website__: str = 'https://github.com/glentner/audit-version-py'
+__keywords__: str = 'version-control semantic-versioning'
+__description__: str = 'Audit public interface for Python projects and suggest next semantic version'
 
 # initialize application logger
 log = logging.getLogger(__name__)
