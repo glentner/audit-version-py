@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: 2022 Geoffrey Lentner
 # SPDX-License-Identifier: Apache-2.0
 
-"""Unit tests for auto-version."""
+"""Unit tests for audit-version."""
 
 
 # internal libs
-from auto_version import __version__
+from audit_version import __version__
 
 
 def test_version():

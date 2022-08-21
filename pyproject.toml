@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "auto_version"
+name = "audit_version"
 version = "0.1.0"
 description = "Audit public interface for Python projects and suggest next semantic version"
 authors = ["Geoffrey Lentner <glentner@purdue.edu>"]
 readme = "README.rst"
-homepage = "https://auto-version.readthedocs.io"
-documentation = "https://auto-version.readthedocs.io"
-repository = "https://github.com/glentner/AutoVersion"
+homepage = "https://audit-version.readthedocs.io"
+documentation = "https://audit-version.readthedocs.io"
+repository = "https://github.com/glentner/audit-version-py"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [tool.poetry.scripts]
-auto-version = 'auto_version:main'
+audit-version = 'audit_version:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -16,15 +16,16 @@ from cmdkit.app import Application
 from cmdkit.cli import Interface
 
 # public interface
-__all__ = ['AutoVersionApp', 'main', '__version__', '__license__']
+__all__ = ['AuditVersionApp', 'main', '__version__', '__license__']
 
 # project metadata
+__appname__     = 'audit-version'
 __version__     = '0.1.0'
 __authors__     = 'Geoffrey Lentner'
 __contact__     = 'glentner@purdue.edu'
 __license__     = 'Apache Software License'
 __copyright__   = '2022. All Rights Reserved.'
-__website__     = 'https://github.com/glentner/AutoVersion'
+__website__     = 'https://github.com/glentner/audit-version-py'
 __keywords__    = 'version-control semantic-versioning'
 __description__ = 'Audit public interface for Python projects and suggest next semantic version'
 
@@ -37,7 +38,7 @@ Application.log_critical = log.critical
 Application.log_exception = log.exception
 
 
-APP_NAME = __name__
+APP_NAME = __appname__
 APP_USAGE = f"""\
 usage: {APP_NAME} [-h] [-v] ...
 {__description__}\
@@ -58,7 +59,7 @@ Copyright {__copyright__}
 """
 
 
-class AutoVersionApp(Application):
+class AuditVersionApp(Application):
     """Top-level application class for console application."""
 
     interface = Interface(APP_NAME, APP_USAGE, APP_HELP)
@@ -66,10 +67,11 @@ class AutoVersionApp(Application):
 
     ALLOW_NOARGS = True
 
-    def run(self: AutoVersionApp) -> None:
+    def run(self: AuditVersionApp) -> None:
         """Business logic for console application (execution starts here)."""
         print('Success')
 
+
 def main() -> int:
     """Entry-point for console application."""
-    return AutoVersionApp.main(sys.argv[1:])
+    return AuditVersionApp.main(sys.argv[1:])

@@ -1,4 +1,4 @@
 # SPDX-FileCopyrightText: 2022 Geoffrey Lentner
 # SPDX-License-Identifier: Apache-2.0
 
-"""Unit tests for auto-version."""
+"""Unit tests for audit-version."""
