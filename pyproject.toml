@@ -1,15 +1,32 @@
 [tool.poetry]
 name = "auto_version"
 version = "0.1.0"
-description = ""
+description = "Audit public interface for Python projects and suggest next semantic version"
 authors = ["Geoffrey Lentner <glentner@purdue.edu>"]
+readme = "README.rst"
+homepage = "https://auto-version.readthedocs.io"
+documentation = "https://auto-version.readthedocs.io"
+repository = "https://github.com/glentner/AutoVersion"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Version Control",
+]
+
+[tool.poetry.scripts]
+auto-version = 'auto_version:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"
 cmdkit = "^2.6.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2"
+pytest = "^7.0"
 hypothesis = "^6.54.4"
 ipython = "^8.4.0"
 pytest-cov = "^3.0.0"
